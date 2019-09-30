@@ -1,28 +1,22 @@
 import React from 'react';
-import logo from './assets/abc.jpg';
+//import logo from './assets/abc.jpg';
 import './App.css';
+import Header from './components/Header';
+import Mideheader from './components/Meadheader';
+import Footer from "./components/Footer";
+import Section from "./components/Section";
+import FooterUpper from "./components/FooterUpper";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-	    <div className="App-logo">
-			<img src={logo} className="App-logo" alt="logo" />
-		</div>
-        
-        <p>
-         please check it 
-        </p>
-		
-		</header>
-		
-		 <container className="App-container">
-			This is the container area
-		</container>
-		
-		<footer className="App-footer-container" > is the footer containt area 
-		</footer>
+       <Header />
+       <Mideheader />
+       <Section />
+       <FooterUpper />
+       <Footer />
      </div>
+	 
     
   );
 }
