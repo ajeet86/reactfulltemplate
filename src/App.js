@@ -12,7 +12,7 @@ function App() {
     <div className="App">
        <Header />
        <Mideheader />
-       <Section />
+       <Section  name='ajeet' />
        <FooterUpper />
        <Footer />
      </div>
