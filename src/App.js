@@ -6,6 +6,7 @@ import Mideheader from './components/Meadheader';
 import Footer from "./components/Footer";
 import Section from "./components/Section";
 import FooterUpper from "./components/FooterUpper";
+import Counter from './components/counter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
        <Header />
        <Mideheader />
        <Section  name='ajeet' />
+       <Counter />
        <FooterUpper />
        <Footer />
      </div>
