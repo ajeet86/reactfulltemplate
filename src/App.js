@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Section from "./components/Section";
 import FooterUpper from "./components/FooterUpper";
 import Counter from './components/counter';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
        <Header />
        <Mideheader />
        <Section  name='ajeet' />
-       <Counter />
+       <Calculator />
+       <Counter /> {/*this is use for parrent child*/}
        <FooterUpper />
        <Footer />
      </div>
