@@ -4,6 +4,7 @@ class Child extends React.Component{
       constructor(props){
             super(props);
             this.state = {date: new Date(), counter:'0'};
+           // this.sendDataToparent=this.sendDataToparent.bind(this);
       }
 
       componentDidMount() {
@@ -26,6 +27,11 @@ class Child extends React.Component{
         });
       }
 
+      sendDataToparent = (props) => {
+        //console.log(this.props);
+        //alert('sdsd');
+        this.props.parentCallback("Hey Popsie, How’s it going?");
+   }
     render(){ 
       // console.log(this.props); 
         return( 
@@ -35,7 +41,8 @@ class Child extends React.Component{
                     <h2>object second parameter:{this.state.counter}</h2>
                     <h3>Your user id is: {this.props.userId}</h3> 
                     <h3>data comming from parent : {this.props.parentdata}</h3> 
-                    <button name="click from child"  onClick={this.props.childclick} />
+                    <button name="click from child" className="b1"  onClick={this.props.childclick} >click from child</button>
+                    <button name="click child call parent" className="b2" onClick={this.sendDataToparent} >click child call parent</button>
                 </div> 
             ); 
     } 
